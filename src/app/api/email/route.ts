@@ -6,8 +6,14 @@ import * as aws from "@aws-sdk/client-ses";
 import async from "async";
 
 import { render } from "@react-email/render";
-import EmailTemplateKo from "../../../../emails/origin_ko";
-import EmailTemplateEn from "../../../../emails/origin_en";
+/**
+ * 해당 부분만 변경해주세요.
+ */
+import EmailTemplateKo from "../../../../emails/2024/20240923_ko";
+import EmailTemplateEn from "../../../../emails/2024/20240923_en";
+/**
+ * 해당 부분만 변경해주세요.
+ */
 
 const ses = new aws.SES({
   region: process.env.REGION,
@@ -27,9 +33,21 @@ export async function POST(req: Request) {
     });
   }
 
-  const subject = "💐 Don't miss out!";
-  const preview = "preview";
+  /**
+   * 해당 부분만 변경해주세요.
+   */
+  const templateTitle =
+    language === "ko"
+      ? "[구름IDE] 멤버십 설문조사에 참여해 주셔서 감사합니다!"
+      : "[goormIDE] Thank you for participating in our membership survey!";
+  const templatePreview =
+    language === "ko"
+      ? "설문조사에 응해주신 분들께 리워드가 지급되었습니다."
+      : "Rewards were given out to the selected customers.";
   const csvFileName = language === "ko" ? "userList_ko.csv" : "userList_en.csv";
+  /**
+   * 해당 부분만 변경해주세요.
+   */
 
   try {
     const filePath = path.join(process.cwd(), "public", csvFileName);
@@ -40,7 +58,7 @@ export async function POST(req: Request) {
       .filter(Boolean);
 
     const Template = language === "ko" ? EmailTemplateKo : EmailTemplateEn;
-    const emailHtml = await render(Template({ preview }));
+    const emailHtml = await render(Template({ preview: templatePreview }));
 
     async.eachOfLimit(
       lines,
@@ -50,7 +68,7 @@ export async function POST(req: Request) {
           const info = await transporter.sendMail({
             from: process.env.ADMIN_USER,
             to,
-            subject,
+            subject: templateTitle,
             html: emailHtml,
           });
           console.log("group", index, "info#", info);
