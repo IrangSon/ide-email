@@ -1,6 +1,8 @@
 "use client";
 import { Button } from "@/components/Button";
 
+import { toast } from "react-toastify";
+
 import { useState } from "react";
 
 export default function Home() {
@@ -19,9 +21,17 @@ export default function Home() {
         }),
         mode: "no-cors",
       });
+
+      toast.success(
+        <span>
+          이메일을 전송 중입니다.
+          <br />
+          로그파일을 확인해주세요
+        </span>
+      );
     } catch (error) {
       console.log(error);
-      alert("Something went wrong. Please try again.");
+      toast("이메일 전송에 실패하였습니다.", { type: "error" });
     } finally {
       setIsSending(false);
     }

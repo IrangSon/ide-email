@@ -22,6 +22,7 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/Breadcrumb";
+import "react-toastify/dist/ReactToastify.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
