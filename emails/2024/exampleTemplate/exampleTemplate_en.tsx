@@ -22,23 +22,29 @@ interface Props {
 /**
  * TopSection의 내용만 수정해주세요.
  */
-
 const TopSection = () => {
   return (
     <Section style={topSectionStyle}>
-      <Heading style={headerTextStyle}>Verify your email address</Heading>
+      <Heading style={headerTextStyle}>타이틀을 작성해주세요.</Heading>
       <Section>
         <Text style={mainTextStyle}>
-          {`Thanks for starting the new AWS account creation process. We want to
-          make sure it's really you. Please enter the following verification
-          code when prompted. If you don&apos;t want to create an account, you
-          can ignore this message. Thanks for starting the new AWS account
-          creation process. We want to make sure it's really you. Please enter
-          the following verification code when prompted. If you don&apos;t want
-          to create an account, you can ignore this message. Thanks for starting
-          the new AWS account creation process. We want to make sure it's really
-          you. Please enter the following verification code when prompted. If
-          you don&apos;t want to create an account, you can ignore this message.`}
+          내용을 작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.내용을 작성해주세요.내용을 작성해주세요.내용을
+          작성해주세요.
         </Text>
         <Section style={centerTextStyle}>
           <Text style={verifyTextStyle}>Verification code</Text>
@@ -54,7 +60,7 @@ const TopSection = () => {
           style={buttonStyle}
           href={"https://help.goorm.io/ko/goormide/gpu/introduction"}
         >
-          Purchase credits now
+          문구를 작성해주세요.
         </Button>
       </Section>
     </Section>

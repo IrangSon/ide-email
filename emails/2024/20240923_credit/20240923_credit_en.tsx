@@ -22,24 +22,23 @@ interface Props {
 /**
  * TopSection의 내용만 수정해주세요.
  */
+
 const TopSection = () => {
   return (
     <Section style={topSectionStyle}>
-      <Heading style={headerTextStyle}>
-        새로워진 GPU 컨테이너를 사용해보세요.
-      </Heading>
+      <Heading style={headerTextStyle}>Verify your email address</Heading>
       <Section>
         <Text style={mainTextStyle}>
           {`Thanks for starting the new AWS account creation process. We want to
-          make sure it's really you. Please enter the following verification
-          code when prompted. If you don&apos;t want to create an account, you
-          can ignore this message. Thanks for starting the new AWS account
-          creation process. We want to make sure it's really you. Please enter
-          the following verification code when prompted. If you don&apos;t want
-          to create an account, you can ignore this message. Thanks for starting
-          the new AWS account creation process. We want to make sure it's really
-          you. Please enter the following verification code when prompted. If
-          you don&apos;t want to create an account, you can ignore this message.`}
+            make sure it's really you. Please enter the following verification
+            code when prompted. If you don&apos;t want to create an account, you
+            can ignore this message. Thanks for starting the new AWS account
+            creation process. We want to make sure it's really you. Please enter
+            the following verification code when prompted. If you don&apos;t want
+            to create an account, you can ignore this message. Thanks for starting
+            the new AWS account creation process. We want to make sure it's really
+            you. Please enter the following verification code when prompted. If
+            you don&apos;t want to create an account, you can ignore this message.`}
         </Text>
         <Section style={centerTextStyle}>
           <Text style={verifyTextStyle}>Verification code</Text>
@@ -55,7 +54,7 @@ const TopSection = () => {
           style={buttonStyle}
           href={"https://help.goorm.io/ko/goormide/gpu/introduction"}
         >
-          GPU 도움말 보러가기
+          Purchase credits now
         </Button>
       </Section>
     </Section>
@@ -123,40 +122,41 @@ const BottomSection = () => {
           <SocialLink
             href="https://goorm.co/?utm_source=newsletter&utm_medium=email&utm_campaign=goorm&utm_content=welcome_mail&utm_term=footer"
             src="https://resource.stibee.com/editor/icon/sns/homepage2-snsC.png"
-            title="홈페이지"
-            alt="홈페이지"
+            title="homepage"
+            alt="homepage"
             padding="0 10px 0 0"
           />
           <SocialLink
             href="https://blog.goorm.io/?utm_source=newsletter&utm_medium=email&utm_campaign=goormblog&utm_content=welcome_mail"
             src="https://resource.stibee.com/editor/icon/sns/blog-snsC.png"
-            title="블로그"
-            alt="블로그"
+            title="blog"
+            alt="blog"
             padding="0 10px"
           />
           <SocialLink
             href="https://www.instagram.com/goorm.co/"
             src="https://resource.stibee.com/editor/icon/sns/instagram-snsC.png"
-            title="인스타그램"
-            alt="인스타그램"
+            title="instagram"
+            alt="instagram"
             padding="0 10px"
           />
           <SocialLink
             href="https://www.facebook.com/goorm.official/"
             src="https://resource.stibee.com/editor/icon/sns/facebook-snsC.png"
-            title="페이스북"
-            alt="페이스북"
+            title="facebook"
+            alt="facebook"
             padding="0 0 0 10px"
           />
         </Section>
         <Section>
           <Text style={footerText}>
-            이 이메일은 발신 전용이며 회신이 불가능합니다.
+            This email is for sending only and cannot be replyed to.
             <br />
             <br />
             ⓒ goorm Inc. All Rights Reserved.
             <br />
-            경기 성남시 분당구 판교로 242 PDC A동 902호
+            A-#902, PDC, 242, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do,
+            Republic of Korea
           </Text>
         </Section>
       </Section>
