@@ -5,6 +5,7 @@ import nodemailer from "nodemailer";
 import * as aws from "@aws-sdk/client-ses";
 import async from "async";
 
+import { logToFile } from "@/utils/logger";
 import { render } from "@react-email/render";
 /**
  * 해당 부분만 변경해주세요.
@@ -72,9 +73,11 @@ export async function POST(req: Request) {
             html: emailHtml,
           });
           console.log("group", index, "info#", info);
+          logToFile(to, "success");
         } catch (error) {
           console.error("Console.error" + " " + error);
           console.log("###################", to);
+          logToFile(to, "fail");
         } finally {
           callback();
         }
