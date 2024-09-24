@@ -10,8 +10,8 @@ import { render } from "@react-email/render";
 /**
  * 해당 부분만 변경해주세요.
  */
-import EmailTemplateKo from "../../../../emails/2024/20240923_ko";
-import EmailTemplateEn from "../../../../emails/2024/20240923_en";
+import EmailTemplateKo from "../../../../emails/2024/20240923_credit/20240923_credit_ko";
+import EmailTemplateEn from "../../../../emails/2024/20240923_credit/20240923_credit_en";
 /**
  * 해당 부분만 변경해주세요.
  */
